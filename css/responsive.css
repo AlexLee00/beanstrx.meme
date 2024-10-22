@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+@media screen and (max-width:1400px) {
+    /* #home */
+    #home .button a {
+        bottom:200px;
+    }
+}
+
+@media screen and (max-width:992px) {    
+    /* header */
+    header .gnb_pc {
+        display:none;
+    }
+    
+    header .side_menu {
+        display:block;
+    }
+    
+    /* #home */
+    #home .button a {
+        bottom:100px;
+        width:100%;
+        max-width:250px;
+        height:80px;
+        line-height:76px;
+        border:3px solid  #9747FF;
+        font-size:28px;
+    }
+    
+    /* #story */    
+    #story .col-lg-6 {
+        text-align:center;
+    }
+    
+    #story .col-12 .text {
+        margin:50px 0 50px;
+        padding:0;
+    }
+    
+    /* #tokenomix */
+    #tokenomix .token1 {
+        left:-100px;
+        max-width:300px;
+    }
+
+    #tokenomix .token2 {
+        right:-50px;
+        max-width:300px;
+    }
+    
+    /* #event */
+    #event {
+        padding:0 0 900px;
+    }
+
+    #event h4 {
+        margin-bottom:500px;
+    }
+    
+    /* #collaborations */
+    #collaborations .collaborations li {
+        width:25%;
+    }
+}
+
+@media screen and (max-width:768px){ 
+    /* #tokenomix */
+    #tokenomix .img_pc {
+        display:none;
+    }
+
+    #tokenomix .img_m {
+        display:block;
+    }
+    
+    /* #collaborations */
+    #collaborations .collaborations li {
+        width:25%;
+        padding:12px;
+    }
+    
+    #collaborations .collaborations li .thumb {
+        width:100px;
+        height:100px;
+    }
+}
+
+@media screen and (max-width:576px){ 
+    /* .btn_top */
+    .btn_top {
+        right:20px;
+        bottom:60px;
+        width:40px;
+        height:40px;
+        line-height:40px;
+        font-size:16px;
+    }
+    
+    /* #home */
+    #home .button a {
+        bottom:0;
+        max-width:250px;
+        height:70px;
+        line-height:66px;
+        border:3px solid  #9747FF;
+        font-size:28px;
+    }
+
+    /* 모바일 크기에서 버튼을 2x2 배열로 유지 */
+    .button-container {
+        justify-content: center;
+    }
+
+    .home-button {
+        flex: 1 1 45%; /* 2x2 배열 */
+        margin: 10px;
+    }
+    
+    /* #story */
+    #story .text br {
+        display:none;
+    }
+    
+    /* #tokenomix */
+    #tokenomix .token1 {
+        left:-50px;
+        max-width:150px;
+    }
+
+    #tokenomix .token2 {
+        right:0px;
+        bottom:-150px;
+        max-width:150px;
+    }
+
+    /* #collaborations */
+    #collaborations .collaborations li {
+        width:33.3333%;
+        padding:6px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    /* header */    
+    header h1 {
+        width:150px;
+    }
+    
+    /* #collaborations */
+    #collaborations .collaborations li .thumb {
+        width:90px;
+        height:90px;
+    }
+}

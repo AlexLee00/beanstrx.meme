@@ -1,0 +1,491 @@
+@charset "utf-8";
+
+/* section */
+section {
+    padding:120px 0;
+}
+
+section .text {
+    color:var(--Gray100Color);
+}
+
+/* #home */
+#home {
+    position:relative;
+    padding:0;
+}
+
+#home .home_bottom {
+    position:absolute;
+    left:50%;
+    bottom:0;
+    transform:translate(-50%, 0);
+    width:100%;
+}
+
+#home .col-12 {
+    position:relative;
+}
+
+#home .button a {
+    position:absolute;
+    right:0;
+    bottom:400px;
+    z-index:10;
+    width:100%;
+    max-width:450px;
+    height:100px;
+    line-height:90px;
+    text-align:center;
+    border-radius:20px;
+    border:5px solid  #9747FF;
+    color:var(--WhiteColor);
+    background-color:#3D3D3D;
+    background-image: linear-gradient(310deg, #9747FF 50%, transparent  50%);
+    background-position:35%;
+    background-size: 400%;
+    transition: background 300ms ease-in-out;
+}
+
+#home .button a:hover {
+    background-position: 100%;
+}
+
+.fullscreen-image {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fullscreen-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+
+/* 버튼 컨테이너 하단 고정 및 가로 정렬 (PC용) */
+.button-container {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  flex-wrap: wrap; /* 모바일용 2x2 배열 지원 */
+}
+
+/* 각 버튼 스타일 */
+.home-button {
+  text-align: center;
+  background-color: #ffdd57;
+  color: #000;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  flex: 1 1 20%; /* 기본적으로 PC에서 각 버튼이 4개 가로로 배치되도록 설정 */
+  margin: 10px;
+}
+
+.home-button:hover {
+  background-color: #ffc107;
+}
+
+/* 모바일 화면에서 2x2 버튼 배열 */
+@media screen and (max-width: 768px) {
+  .button-container {
+      justify-content: center; /* 버튼을 가운데 정렬 */
+  }
+
+  .home-button {
+      flex: 1 1 45%; /* 모바일에서 각 버튼을 2개씩 가로로 배치 */
+      margin: 10px;
+  }
+}
+
+
+/* #story */
+#story .col-12 {
+    text-align:center;
+}
+
+#story h4 {
+    margin-bottom:50px;
+}
+
+#story .cross {
+    display:flex;
+    flex-direction:row-reverse;
+    margin:50px 0;
+    text-align:right;
+}
+
+#story .col-lg-6 {
+    margin-bottom:30px;
+    display:flex;
+    align-items:center;
+}
+
+#story .col-12 .text {
+    margin:50px 0 50px;
+    padding:0 80px;
+    text-align:center;
+}
+
+/* #tokenomix */
+#tokenomix  {
+    position:relative;
+    padding-bottom:400px;
+    text-align:center;
+}
+
+#tokenomix .token1 {
+    position:absolute;
+    left:-200px;
+    bottom:100px;
+    width:100%;
+    max-width:500px;
+    transform:rotate(340deg);
+}
+
+#tokenomix .token2 {
+    position:absolute;
+    right:-100px;
+    bottom:-250px;
+    z-index:-1;
+    width:100%;
+    max-width:500px;
+    transform:rotate(20deg);
+}
+
+#tokenomix .img_pc {
+    display:block;
+}
+
+#tokenomix .img_m {
+    display:none;
+}
+
+/* #event */
+#event {
+    padding:0 0 1200px;
+    background:url(../images/bg/event.png) no-repeat 50% 50%;
+    background-size:cover;
+    text-align:center;
+}
+
+#event h4 {
+    margin-bottom:700px;
+}
+
+#event .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+#event .swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#event .swiper-slide img {
+    display: block;
+    object-fit: cover;
+}
+
+/* #collaborations */
+#collaborations {
+    position:relative;
+    background:url(../images/bg/collaborations.png) no-repeat 50% 50%;
+    background-size:cover;
+    text-align:center;
+}
+
+#collaborations .info_top {
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+#collaborations .info_tv {
+    position:absolute;
+    left:50%;
+    top:0;
+    transform:translate(-50%);
+    width:auto;
+}
+
+#collaborations h4 {
+    position:relative;
+    display:inline-block;
+    margin:250px 0;
+    color:var(--BlackColor);
+    text-transform: uppercase;
+    overflow: hidden
+}
+
+#collaborations h4::before {
+    content: attr(data-content);
+    position: absolute;
+    left: -2px;
+    text-shadow: 3px 0 #00f;
+    top: 0;
+    color: #fff;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+#collaborations h4::after {
+    content: attr(data-content);
+    position: absolute;
+    left: -2px;
+    text-shadow: -3px 0 #f00;
+    top: 0;
+    color: #fff;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(77px, 9999px, 22px, 0);
+  }
+  5% {
+    clip: rect(70px, 9999px, 31px, 0);
+  }
+  10% {
+    clip: rect(37px, 9999px, 45px, 0);
+  }
+  15% {
+    clip: rect(43px, 9999px, 29px, 0);
+  }
+  20% {
+    clip: rect(41px, 9999px, 44px, 0);
+  }
+  25% {
+    clip: rect(9px, 9999px, 79px, 0);
+  }
+  30% {
+    clip: rect(91px, 9999px, 12px, 0);
+  }
+  35% {
+    clip: rect(48px, 9999px, 74px, 0);
+  }
+  40% {
+    clip: rect(30px, 9999px, 69px, 0);
+  }
+  45% {
+    clip: rect(31px, 9999px, 93px, 0);
+  }
+  50% {
+    clip: rect(91px, 9999px, 52px, 0);
+  }
+  55% {
+    clip: rect(55px, 9999px, 62px, 0);
+  }
+  60% {
+    clip: rect(21px, 9999px, 71px, 0);
+  }
+  65% {
+    clip: rect(29px, 9999px, 52px, 0);
+  }
+  70% {
+    clip: rect(33px, 9999px, 81px, 0);
+  }
+  75% {
+    clip: rect(44px, 9999px, 3px, 0);
+  }
+  80% {
+    clip: rect(71px, 9999px, 47px, 0);
+  }
+  85% {
+    clip: rect(77px, 9999px, 76px, 0);
+  }
+  90% {
+    clip: rect(43px, 9999px, 48px, 0);
+  }
+  95% {
+    clip: rect(13px, 9999px, 80px, 0);
+  }
+  100% {
+    clip: rect(15px, 9999px, 11px, 0);
+  }
+}
+@keyframes noise-anim {
+  0% {
+    clip: rect(40px, 9999px, 198px, 0);
+  }
+  5% {
+    clip: rect(111px, 9999px, 135px, 0);
+  }
+  10% {
+    clip: rect(134px, 9999px, 92px, 0);
+  }
+  15% {
+    clip: rect(156px, 9999px, 171px, 0);
+  }
+  20% {
+    clip: rect(92px, 9999px, 73px, 0);
+  }
+  25% {
+    clip: rect(200px, 9999px, 108px, 0);
+  }
+  30% {
+    clip: rect(147px, 9999px, 48px, 0);
+  }
+  35% {
+    clip: rect(136px, 9999px, 189px, 0);
+  }
+  40% {
+    clip: rect(12px, 9999px, 116px, 0);
+  }
+  45% {
+    clip: rect(74px, 9999px, 4px, 0);
+  }
+  50% {
+    clip: rect(25px, 9999px, 97px, 0);
+  }
+  55% {
+    clip: rect(40px, 9999px, 39px, 0);
+  }
+  60% {
+    clip: rect(73px, 9999px, 123px, 0);
+  }
+  65% {
+    clip: rect(58px, 9999px, 36px, 0);
+  }
+  70% {
+    clip: rect(154px, 9999px, 8px, 0);
+  }
+  75% {
+    clip: rect(115px, 9999px, 96px, 0);
+  }
+  80% {
+    clip: rect(50px, 9999px, 195px, 0);
+  }
+  85% {
+    clip: rect(71px, 9999px, 154px, 0);
+  }
+  90% {
+    clip: rect(49px, 9999px, 84px, 0);
+  }
+  95% {
+    clip: rect(73px, 9999px, 180px, 0);
+  }
+  100% {
+    clip: rect(113px, 9999px, 117px, 0);
+  }
+}
+
+#collaborations .collaborations {
+    width:100%;
+    margin:0 0 80px;
+    align-items:center;
+}
+
+#collaborations .collaborations li {
+    width:16.6666667%;
+    padding:24px;
+}
+
+#collaborations .collaborations li .thumb {
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    background-color:var(--BlackColor);
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -ms-transition:.5s;
+    -o-transition:.5s;
+    transition:.5s;
+}
+
+#collaborations .collaborations li:hover .thumb {
+    box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff;
+}
+
+
+#collaborations .sns {
+    width:100%;
+    max-width:376px;
+    margin:50px auto 0;
+    align-items:center;
+}
+
+#collaborations .sns li {
+    width:25%;
+    padding:0 12px;
+}
+
+#collaborations .sns li a {
+    display:inline-block;
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background-color:var(--BlackColor);
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -ms-transition:.5s;
+    -o-transition:.5s;
+    transition:.5s;
+}
+
+#collaborations .sns li:hover a {
+    box-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000;
+}
+
+#collaborations .sns li.twitter a {
+    background:url(../images/sns/twitter.png) no-repeat 50% 50%;
+    background-size:cover;
+} 
+
+#collaborations .sns li.telegram a {
+    background:url(../images/sns/telegram.png) no-repeat 50% 50%;
+    background-size:cover;
+} 
+
+#collaborations .sns li.sunswap a {
+    background:url(../images/sns/sunswap.png) no-repeat 50% 50%;
+    background-size:cover;
+} 
+
+#collaborations .sns li.linktree a {
+    background:url(../images/sns/linktree.png) no-repeat 50% 50%;
+    background-size:cover;
+} 
+
+#collaborations .sns li.twitter:hover a {
+    background:url(../images/sns/twitter_on.png) no-repeat 50% 50%;
+    background-size:cover;
+    background-color:var(--BlackColor);
+} 
+
+#collaborations .sns li.telegram:hover a {
+    background:url(../images/sns/telegram_on.png) no-repeat 50% 50%;
+    background-size:cover;
+    background-color:var(--BlackColor);
+} 
+
+#collaborations .sns li.sunswap:hover a {
+    background:url(../images/sns/sunswap_on.png) no-repeat 50% 50%;
+    background-size:cover;
+    background-color:var(--BlackColor);
+} 
+
+#collaborations .sns li.linktree:hover a {
+    background:url(../images/sns/linktree_on.png) no-repeat 50% 50%;
+    background-size:cover;
+    background-color:var(--BlackColor);
+} 
