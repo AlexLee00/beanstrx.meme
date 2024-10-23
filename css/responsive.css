@@ -7,6 +7,26 @@
     }
 }
 
+@media screen and (max-width:1100px) {    
+    /* 토큰 컨트랙트 위치 조정 */
+    .image-copy-container {
+        position: absolute;
+        top: 15%; /* 화면 중앙 */
+        left: 55%; /* 화면 중앙 */
+        transform: translate(-50%, -50%); /* 이미지가 중앙에서 시작되도록 */
+        cursor: pointer; /* 마우스를 올렸을 때 커서 변경 */
+      }
+
+    .image-copy-container img {
+        content: url('../images/token/token_mobile.png'); /* 모바일용 이미지 */
+    }
+      
+    #copy-image {
+    width: 25%; /* 이미지 크기 */
+    height: auto;
+    }
+}
+
 @media screen and (max-width:992px) {    
     /* header */
     header .gnb_pc {
@@ -26,6 +46,23 @@
         line-height:76px;
         border:3px solid  #9747FF;
         font-size:28px;
+    }
+
+    .image-copy-container {
+        position: absolute;
+        top: 17%; /* 화면 중앙 */
+        left: 55%; /* 화면 중앙 */
+        transform: translate(-50%, -50%); /* 이미지가 중앙에서 시작되도록 */
+        cursor: pointer; /* 마우스를 올렸을 때 커서 변경 */
+      }
+
+    .image-copy-container img {
+        content: url('../images/token/token_mobile.png'); /* 모바일용 이미지 */
+    }
+      
+    #copy-image {
+    width: 30%; /* 이미지 크기 */
+    height: auto;
     }
     
     /* #story */    
@@ -65,6 +102,46 @@
 }
 
 @media screen and (max-width:768px){ 
+    /* #home */
+
+    .button-container {
+        justify-content: center; /* 버튼을 가운데 정렬 */
+    }
+  
+    .home-button {
+        flex: 1 1 45%; /* 모바일에서 각 버튼을 2개씩 가로로 배치 */
+        margin: 10px;
+    }
+
+    .home-button.button-sun img {
+        content: url('../images/button/sunswap-m.png'); /* 모바일용 이미지 */
+    }
+
+    .home-button.button-bvox img {
+        content: url('../images/button/bvox-m.png'); /* 모바일용 이미지 */
+    }
+
+    .home-button.button-come img {
+        content: url('../images/button/come-m.png'); /* 모바일용 이미지 */
+    }
+
+    .image-copy-container {
+        position: absolute;
+        top: 25%; /* 화면 중앙 */
+        left: 55%; /* 화면 중앙 */
+        transform: translate(-50%, -50%); /* 이미지가 중앙에서 시작되도록 */
+        cursor: pointer; /* 마우스를 올렸을 때 커서 변경 */
+      }
+
+    .image-copy-container img {
+        content: url('../images/token/token_mobile.png'); /* 모바일용 이미지 */
+    }
+      
+    #copy-image {
+    width: 30%; /* 이미지 크기 */
+    height: auto;
+    }
+
     /* #tokenomix */
     #tokenomix .img_pc {
         display:none;
@@ -96,25 +173,45 @@
         line-height:40px;
         font-size:16px;
     }
-    
+
     /* #home */
-    #home .button a {
-        bottom:0;
-        max-width:250px;
-        height:70px;
-        line-height:66px;
-        border:3px solid  #9747FF;
-        font-size:28px;
-    }
 
-    /* 모바일 크기에서 버튼을 2x2 배열로 유지 */
     .button-container {
-        justify-content: center;
+        justify-content: center; /* 버튼을 가운데 정렬 */
+    }
+  
+    .home-button {
+        flex: 1 1 45%; /* 모바일에서 각 버튼을 2개씩 가로로 배치 */
+        margin: 10px;
     }
 
-    .home-button {
-        flex: 1 1 45%; /* 2x2 배열 */
-        margin: 10px;
+    .home-button.button-sun img {
+        content: url('../images/button/sunswap-m.png'); /* 모바일용 이미지 */
+    }
+
+    .home-button.button-bvox img {
+        content: url('../images/button/bvox-m.png'); /* 모바일용 이미지 */
+    }
+
+    .home-button.button-come img {
+        content: url('../images/button/come-m.png'); /* 모바일용 이미지 */
+    }
+
+    .image-copy-container {
+        position: absolute;
+        top: 30%; /* 화면 중앙 */
+        left: 55%; /* 화면 중앙 */
+        transform: translate(-50%, -50%); /* 이미지가 중앙에서 시작되도록 */
+        cursor: pointer; /* 마우스를 올렸을 때 커서 변경 */
+      }
+
+    .image-copy-container img {
+        content: url('../images/token/token_mobile.png'); /* 모바일용 이미지 */
+    }
+      
+    #copy-image {
+    width: 35%; /* 이미지 크기 */
+    height: auto;
     }
     
     /* #story */
@@ -145,6 +242,29 @@
     /* header */    
     header h1 {
         width:150px;
+    }
+
+    /* #home */
+
+    .button-container {
+        justify-content: center; /* 버튼을 가운데 정렬 */
+    }
+  
+    .home-button {
+        flex: 1 1 45%; /* 모바일에서 각 버튼을 2개씩 가로로 배치 */
+        margin: 10px;
+    }
+
+    .home-button.button-sun img {
+        content: url('../images/button/sunswap-m.png'); /* 모바일용 이미지 */
+    }
+
+    .home-button.button-bvox img {
+        content: url('../images/button/bvox-m.png'); /* 모바일용 이미지 */
+    }
+
+    .home-button.button-come img {
+        content: url('../images/button/come-m.png'); /* 모바일용 이미지 */
     }
     
     /* #collaborations */

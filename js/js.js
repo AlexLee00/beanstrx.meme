@@ -3,9 +3,9 @@ $(function(){
         $menuMobile = $('header .gnb_m .menu-list'),
         $contents   = $('.scroll'),
         $doc        = $('html, body');
-    
+
+    // 스크롤 이벤트 처리
     $(window).scroll(function(){
-        
         var scltop = $(window).scrollTop();
 
         $.each($contents, function(idx, item){
@@ -16,104 +16,111 @@ $(function(){
             if (targetTop <= scltop) {
                 $menuPc.removeClass('on');
                 $menuPc.eq(idx).addClass('on');
-                
+
                 $menuMobile.removeClass('on');
                 $menuMobile.eq(idx).addClass('on');
             }
             if (!(200 <= scltop)) {
                 $menuPc.removeClass('on');
-                
                 $menuMobile.removeClass('on');
             }
-        })
-        
+        });
+
         if(scltop > 450){
             $('.btn_top').stop().fadeIn();
-        }else{
+        } else {
             $('.btn_top').stop().fadeOut();
         }
     });
-    
+
+    // 상단으로 이동 버튼
     $('.btn_top').click(function(e){
         e.preventDefault();
         $('html,body').animate({scrollTop:0}, 800);
     });
-    
-    //gnb
-    $(document).on('click','.js-menu_toggle.closed',function(e){
-        e.preventDefault(); $('.list_load, .list_item').stop();
-        $(this).removeClass('closed').addClass('opened');
 
+    // 메뉴 열기 및 닫기
+    $(document).on('click', '.js-menu_toggle.closed', function(e){
+        e.preventDefault(); 
+        $('.list_load, .list_item').stop();
+        $(this).removeClass('closed').addClass('opened');
         $('.side_menu').css({ 'right':'0px' });
 
         var count = $('.list_item').length;
-        $('.list_load').slideDown( (count*.6)*100 );
+        $('.list_load').slideDown((count * 0.6) * 100);
         $('.list_item').each(function(i){
             var thisLI = $(this);
-            timeOut = 100*i;
             setTimeout(function(){
                 thisLI.css({
-                    'opacity':'1',
-                    'margin-right':'0'
+                    'opacity': '1',
+                    'margin-right': '0'
                 });
-            },100*i);
+            }, 100 * i);
         });
     });
 
-    $(document).on('click','.js-menu_toggle.opened',function(e){
-        e.preventDefault(); $('.list_load, .list_item').stop();
+    $(document).on('click', '.js-menu_toggle.opened', function(e){
+        e.preventDefault(); 
+        $('.list_load, .list_item').stop();
         $(this).removeClass('opened').addClass('closed');
-
-        $('.side_menu').css({ 'right':'-100%' });
+        $('.side_menu').css({ 'right': '-100%' });
 
         var count = $('.list_item').length;
         $('.list_item').css({
-            'opacity':'0',
-            'margin-right':'-20px'
+            'opacity': '0',
+            'margin-right': '-20px'
         });
         $('.list_load').slideUp(300);
     });
-    
-    //header 
+
+    // 헤더 배경 처리
     $(window).scroll(function(){
         var windTop = $(this).scrollTop();
-        
-        if(windTop>100){
+        if (windTop > 100) {
             $('header').removeClass().addClass('bg-blur');
-        }else{
+        } else {
             $('header').removeClass().addClass('bg-transparent');
         }
     });
-    
-    $('header .side_menu .lang li a').click(function(){
-        $('header .side_menu .js-menu_toggle').trigger('click');
-    });
-    
-    $('header .gnb_m li a').click(function(){
+
+    $('header .side_menu .lang li a, header .gnb_m li a').click(function(){
         $('header .side_menu .js-menu_toggle').trigger('click');
     });
 
-        //#roadmap
-        var swiper = new Swiper(".eventSwiper", {
-          slidesPerView: 1,
-          spaceBetween: 30,
-          breakpoints: {
+    // Swiper 설정
+    var swiper = new Swiper(".eventSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        breakpoints: {
             360: {
-              slidesPerView: 1.5,
-              spaceBetween: 20,
+                slidesPerView: 1.5,
+                spaceBetween: 20,
             },
             640: {
-              slidesPerView: 2.5,
-              spaceBetween: 20,
+                slidesPerView: 2.5,
+                spaceBetween: 20,
             },
             768: {
-              slidesPerView: 3.5,
-              spaceBetween: 40,
+                slidesPerView: 3.5,
+                spaceBetween: 40,
             },
             1024: {
-              slidesPerView: 4,
-              spaceBetween: 50,
+                slidesPerView: 4,
+                spaceBetween: 50,
             },
-          },
-        });
+        },
+    });
+
+    // 이미지 클릭 시 링크 복사 기능 추가
+    $('#copy-image').click(function() {
+        var linkToCopy = "TQCfza5xo7srwPsYvdpQgYbgQAUWcAcjSa"; // 복사할 링크
+        var tempInput = $('<textarea>');
+        $('body').append(tempInput);
+        tempInput.val(linkToCopy).select();
+        document.execCommand("copy");
+        tempInput.remove();
+
+        // 알림 표시 (선택 사항)
+        alert("SUNBEANS 토큰컨트랙트가 복사되었습니다:\n" + linkToCopy);
+    });
 });
