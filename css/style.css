@@ -71,6 +71,7 @@ section .text {
 /* 버튼 컨테이너 하단 고정 및 가로 정렬 (PC용) */
 .button-container {
   position: absolute;
+  left: 0px;
   bottom: 20px;
   width: 100%;
   display: flex;
