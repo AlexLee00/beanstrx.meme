@@ -15,7 +15,7 @@
         left: 55%; /* 화면 중앙 */
         transform: translate(-50%, -50%); /* 이미지가 중앙에서 시작되도록 */
         cursor: pointer; /* 마우스를 올렸을 때 커서 변경 */
-      }
+    }
 
     .image-copy-container img {
         content: url('../images/token/token_mobile.png'); /* 모바일용 이미지 */
@@ -37,27 +37,12 @@
         display:block;
     }
     
-    /* #home */
-    #home .button a {
-        bottom:100px;
-        width:100%;
-        max-width:250px;
-        height:80px;
-        line-height:76px;
-        border:3px solid  #9747FF;
-        font-size:28px;
-    }
-
     .image-copy-container {
         position: absolute;
         top: 17%; /* 화면 중앙 */
         left: 55%; /* 화면 중앙 */
         transform: translate(-50%, -50%); /* 이미지가 중앙에서 시작되도록 */
         cursor: pointer; /* 마우스를 올렸을 때 커서 변경 */
-      }
-
-    .image-copy-container img {
-        content: url('../images/token/token_mobile.png'); /* 모바일용 이미지 */
     }
       
     #copy-image {
@@ -131,15 +116,6 @@
         left: 55%; /* 화면 중앙 */
         transform: translate(-50%, -50%); /* 이미지가 중앙에서 시작되도록 */
         cursor: pointer; /* 마우스를 올렸을 때 커서 변경 */
-      }
-
-    .image-copy-container img {
-        content: url('../images/token/token_mobile.png'); /* 모바일용 이미지 */
-    }
-      
-    #copy-image {
-    width: 30%; /* 이미지 크기 */
-    height: auto;
     }
 
     /* #tokenomix */
@@ -185,28 +161,12 @@
         margin: 10px;
     }
 
-    .home-button.button-sun img {
-        content: url('../images/button/sunswap-m.png'); /* 모바일용 이미지 */
-    }
-
-    .home-button.button-bvox img {
-        content: url('../images/button/bvox-m.png'); /* 모바일용 이미지 */
-    }
-
-    .home-button.button-come img {
-        content: url('../images/button/come-m.png'); /* 모바일용 이미지 */
-    }
-
     .image-copy-container {
         position: absolute;
         top: 30%; /* 화면 중앙 */
         left: 55%; /* 화면 중앙 */
         transform: translate(-50%, -50%); /* 이미지가 중앙에서 시작되도록 */
         cursor: pointer; /* 마우스를 올렸을 때 커서 변경 */
-      }
-
-    .image-copy-container img {
-        content: url('../images/token/token_mobile.png'); /* 모바일용 이미지 */
     }
       
     #copy-image {
@@ -242,29 +202,6 @@
     /* header */    
     header h1 {
         width:150px;
-    }
-
-    /* #home */
-
-    .button-container {
-        justify-content: center; /* 버튼을 가운데 정렬 */
-    }
-  
-    .home-button {
-        flex: 1 1 45%; /* 모바일에서 각 버튼을 2개씩 가로로 배치 */
-        margin: 10px;
-    }
-
-    .home-button.button-sun img {
-        content: url('../images/button/sunswap-m.png'); /* 모바일용 이미지 */
-    }
-
-    .home-button.button-bvox img {
-        content: url('../images/button/bvox-m.png'); /* 모바일용 이미지 */
-    }
-
-    .home-button.button-come img {
-        content: url('../images/button/come-m.png'); /* 모바일용 이미지 */
     }
     
     /* #collaborations */
