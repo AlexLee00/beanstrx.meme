@@ -121,6 +121,6 @@ $(function(){
         tempInput.remove();
 
         // 알림 표시 (선택 사항)
-        alert("SUNBEANS 토큰컨트랙트가 복사되었습니다:\n" + linkToCopy);
+        alert(linkToCopy);
     });
 });
