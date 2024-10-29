@@ -428,13 +428,13 @@ section .text {
 
 #collaborations .sns {
     width:100%;
-    max-width:376px;
+    max-width:492px;
     margin:50px auto 0;
     align-items:center;
 }
 
 #collaborations .sns li {
-    width:25%;
+    width:20%;
     padding:0 12px;
 }
 
@@ -475,6 +475,11 @@ section .text {
     background-size:cover;
 } 
 
+#collaborations .sns li.cmc a {
+  background:url(../images/sns/cmc.png) no-repeat 50% 50%;
+  background-size:cover;
+} 
+
 #collaborations .sns li.twitter:hover a {
     background:url(../images/sns/twitter_on.png) no-repeat 50% 50%;
     background-size:cover;
@@ -495,6 +500,12 @@ section .text {
 
 #collaborations .sns li.linktree:hover a {
     background:url(../images/sns/linktree_on.png) no-repeat 50% 50%;
+    background-size:cover;
+    background-color:var(--BlackColor);
+} 
+
+#collaborations .sns li.cmc:hover a {
+    background:url(../images/sns/cmc_on.png) no-repeat 50% 50%;
     background-size:cover;
     background-color:var(--BlackColor);
 } 

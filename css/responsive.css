@@ -105,6 +105,10 @@
         content: url('../images/button/bvox-m.png'); /* 모바일용 이미지 */
     }
 
+    .home-button.button-dextools img {
+        content: url('../images/button/dextools-m.png'); /* 모바일용 이미지 */
+    }
+
     .home-button.button-come img {
         content: url('../images/button/come-m.png'); /* 모바일용 이미지 */
     }
