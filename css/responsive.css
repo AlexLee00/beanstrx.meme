@@ -189,6 +189,12 @@
         width:33.3333%;
         padding:6px;
     }
+
+    #collaborations .sns li a {
+        display:inline-block;
+        width:60px;
+        height:60px;
+    }
 }
 
 @media screen and (max-width:360px) {
@@ -201,5 +207,11 @@
     #collaborations .collaborations li .thumb {
         width:90px;
         height:90px;
+    }
+
+    #collaborations .sns li a {
+        display:inline-block;
+        width:60px;
+        height:60px;
     }
 }
