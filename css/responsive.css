@@ -190,6 +190,11 @@
         padding:6px;
     }
 
+    #collaborations .sns li {
+        width:20%;
+        padding:0 10px;
+    }
+
     #collaborations .sns li a {
         display:inline-block;
         width:60px;
@@ -207,6 +212,11 @@
     #collaborations .collaborations li .thumb {
         width:90px;
         height:90px;
+    }
+
+    #collaborations .sns li {
+        width:20%;
+        padding:0 10px;
     }
 
     #collaborations .sns li a {
