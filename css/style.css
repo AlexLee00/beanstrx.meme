@@ -2,53 +2,53 @@
 
 /* section */
 section {
-    padding:120px 0;
+  padding: 120px 0;
 }
 
 section .text {
-    color:var(--Gray100Color);
+  color: var(--Gray100Color);
 }
 
 /* #home */
 #home {
-    position:relative;
-    padding:0;
+  position: relative;
+  padding: 0;
 }
 
 #home .home_bottom {
-    position:absolute;
-    left:50%;
-    bottom:0;
-    transform:translate(-50%, 0);
-    width:100%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+  width: 100%;
 }
 
 #home .col-12 {
-    position:relative;
+  position: relative;
 }
 
 #home .button a {
-    position:absolute;
-    right:0;
-    bottom:400px;
-    z-index:10;
-    width:100%;
-    max-width:450px;
-    height:100px;
-    line-height:90px;
-    text-align:center;
-    border-radius:20px;
-    border:5px solid  #9747FF;
-    color:var(--WhiteColor);
-    background-color:#3D3D3D;
-    background-image: linear-gradient(310deg, #9747FF 50%, transparent  50%);
-    background-position:35%;
-    background-size: 400%;
-    transition: background 300ms ease-in-out;
+  position: absolute;
+  right: 0;
+  bottom: 400px;
+  z-index: 10;
+  width: 100%;
+  max-width: 450px;
+  height: 100px;
+  line-height: 90px;
+  text-align: center;
+  border-radius: 20px;
+  border: 5px solid #9747ff;
+  color: var(--WhiteColor);
+  background-color: #3d3d3d;
+  background-image: linear-gradient(310deg, #9747ff 50%, transparent 50%);
+  background-position: 35%;
+  background-size: 400%;
+  transition: background 300ms ease-in-out;
 }
 
 #home .button a:hover {
-    background-position: 100%;
+  background-position: 100%;
 }
 
 .fullscreen-image {
@@ -94,7 +94,8 @@ section .text {
 /* 마우스를 올렸을 때 흰색 쉐도우 효과 */
 .home-button:hover img {
   border-radius: 10px;
-  box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff;
+  box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff,
+    0 0 30px #ffffff, 0 0 40px #ffffff;
 }
 
 /* "COMING SOON" 버튼에 호버 및 마우스 동작 제거 */
@@ -123,148 +124,150 @@ section .text {
 
 /* #story */
 #story .col-12 {
-    text-align:center;
+  text-align: center;
 }
 
 #story h4 {
-    margin-bottom:50px;
+  margin-bottom: 50px;
 }
 
 #story .cross {
-    display:flex;
-    flex-direction:row-reverse;
-    margin:50px 0;
-    text-align:right;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 50px 0;
+  text-align: right;
 }
 
 #story .col-lg-6 {
-    margin-bottom:30px;
-    display:flex;
-    align-items:center;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
 }
 
 #story .col-12 .text {
-    margin:50px 0 50px;
-    padding:0 80px;
-    text-align:center;
+  margin: 50px 0 50px;
+  padding: 0 80px;
+  text-align: center;
 }
 
 /* #tokenomix */
-#tokenomix  {
-    position:relative;
-    padding-bottom:400px;
-    text-align:center;
+#tokenomix {
+  position: relative;
+  padding-bottom: 400px;
+  text-align: center;
 }
 
 #tokenomix .token1 {
-    position:absolute;
-    left:-200px;
-    bottom:100px;
-    width:100%;
-    max-width:500px;
-    transform:rotate(340deg);
+  position: absolute;
+  left: -200px;
+  bottom: 100px;
+  width: 100%;
+  max-width: 500px;
+  transform: rotate(340deg);
 }
 
 #tokenomix .token2 {
-    position:absolute;
-    right:-100px;
-    bottom:-250px;
-    z-index:-1;
-    width:100%;
-    max-width:500px;
-    transform:rotate(20deg);
+  position: absolute;
+  right: -100px;
+  bottom: -250px;
+  z-index: -1;
+  width: 100%;
+  max-width: 500px;
+  transform: rotate(20deg);
 }
 
 #tokenomix .img_pc {
-    display:block;
+  display: block;
 }
 
 #tokenomix .img_m {
-    display:none;
+  display: none;
 }
 
 /* #event */
 #event {
-    padding:0 0 1200px;
-    background:url(../images/bg/event.png) no-repeat 50% 50%;
-    background-size:cover;
-    text-align:center;
+  padding: 0 0 1200px;
+  background: url(../images/bg/event.png) no-repeat 50% 50%;
+  background-size: cover;
+  text-align: center;
 }
 
 #event h4 {
-    margin-bottom:700px;
+  margin-bottom: 700px;
 }
 
 #event .swiper {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 #event .swiper-slide {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #event .swiper-slide img {
-    display: block;
-    object-fit: cover;
+  display: block;
+  object-fit: cover;
 }
 
 /* #collaborations */
 #collaborations {
-    position:relative;
-    background:url(../images/bg/collaborations.png) no-repeat 50% 50%;
-    background-size:cover;
-    text-align:center;
+  position: relative;
+  background: url(../images/bg/collaborations.png) no-repeat 50% 50%;
+  background-size: cover;
+  text-align: center;
 }
 
 #collaborations .info_top {
-    position:absolute;
-    left:0;
-    top:0;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 #collaborations .info_tv {
-    position:absolute;
-    left:50%;
-    top:0;
-    transform:translate(-50%);
-    width:auto;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%);
+  width: auto;
+  z-index: 1;
 }
 
 #collaborations h4 {
-    position:relative;
-    display:inline-block;
-    margin:250px 0;
-    color:var(--BlackColor);
-    text-transform: uppercase;
-    overflow: hidden
+  position: relative;
+  display: inline-block;
+  margin: 250px 0;
+  color: var(--BlackColor);
+  text-transform: uppercase;
+  overflow: hidden;
+  z-index: 9;
 }
 
 #collaborations h4::before {
-    content: attr(data-content);
-    position: absolute;
-    left: -2px;
-    text-shadow: 3px 0 #00f;
-    top: 0;
-    color: #fff;
-    overflow: hidden;
-    clip: rect(0, 900px, 0, 0);
-    animation: noise-anim-2 3s infinite linear alternate-reverse;
+  content: attr(data-content);
+  position: absolute;
+  left: -2px;
+  text-shadow: 3px 0 #00f;
+  top: 0;
+  color: #fff;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
 }
 
 #collaborations h4::after {
-    content: attr(data-content);
-    position: absolute;
-    left: -2px;
-    text-shadow: -3px 0 #f00;
-    top: 0;
-    color: #fff;
-    overflow: hidden;
-    clip: rect(0, 900px, 0, 0);
-    animation: noise-anim-2 3s infinite linear alternate-reverse;
+  content: attr(data-content);
+  position: absolute;
+  left: -2px;
+  text-shadow: -3px 0 #f00;
+  top: 0;
+  color: #fff;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
 }
 
 @keyframes noise-anim-2 {
@@ -399,113 +402,172 @@ section .text {
 }
 
 #collaborations .collaborations {
-    width:100%;
-    margin:0 0 80px;
-    align-items:center;
+  width: 100%;
+  margin: 0 0 80px;
+  align-items: center;
 }
 
 #collaborations .collaborations li {
-    width:16.6666667%;
-    padding:24px;
+  width: 16.6666667%;
+  padding: 24px;
 }
 
 #collaborations .collaborations li .thumb {
-    width:140px;
-    height:140px;
-    border-radius:50%;
-    background-color:var(--BlackColor);
-    -webkit-transition:.5s;
-    -moz-transition:.5s;
-    -ms-transition:.5s;
-    -o-transition:.5s;
-    transition:.5s;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-color: var(--BlackColor);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 #collaborations .collaborations li:hover .thumb {
-    box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff;
+  box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff,
+    0 0 30px #ffffff, 0 0 40px #ffffff;
 }
 
-
 #collaborations .sns {
-    width:100%;
-    max-width:492px;
-    margin:50px auto 0;
-    align-items:center;
+  width: 100%;
+  max-width: 492px;
+  margin: 50px auto 0;
+  align-items: center;
 }
 
 #collaborations .sns li {
-    width:20%;
-    padding:0 12px;
+  width: 20%;
+  padding: 0 12px;
 }
 
 #collaborations .sns li a {
-    display:inline-block;
-    width:70px;
-    height:70px;
-    border-radius:50%;
-    background-color:var(--BlackColor);
-    -webkit-transition:.5s;
-    -moz-transition:.5s;
-    -ms-transition:.5s;
-    -o-transition:.5s;
-    transition:.5s;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--BlackColor);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 #collaborations .sns li:hover a {
-    box-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000;
+  box-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 20px #000000,
+    0 0 30px #000000, 0 0 40px #000000;
 }
 
 #collaborations .sns li.twitter a {
-    background:url(../images/sns/twitter.png) no-repeat 50% 50%;
-    background-size:cover;
-} 
+  background: url(../images/sns/twitter.png) no-repeat 50% 50%;
+  background-size: cover;
+}
 
 #collaborations .sns li.telegram a {
-    background:url(../images/sns/telegram.png) no-repeat 50% 50%;
-    background-size:cover;
-} 
+  background: url(../images/sns/telegram.png) no-repeat 50% 50%;
+  background-size: cover;
+}
 
 #collaborations .sns li.sunswap a {
-    background:url(../images/sns/sunswap.png) no-repeat 50% 50%;
-    background-size:cover;
-} 
+  background: url(../images/sns/sunswap.png) no-repeat 50% 50%;
+  background-size: cover;
+}
 
 #collaborations .sns li.linktree a {
-    background:url(../images/sns/linktree.png) no-repeat 50% 50%;
-    background-size:cover;
-} 
+  background: url(../images/sns/linktree.png) no-repeat 50% 50%;
+  background-size: cover;
+}
 
 #collaborations .sns li.cmc a {
-  background:url(../images/sns/cmc.png) no-repeat 50% 50%;
-  background-size:cover;
-} 
+  background: url(../images/sns/cmc.png) no-repeat 50% 50%;
+  background-size: cover;
+}
 
 #collaborations .sns li.twitter:hover a {
-    background:url(../images/sns/twitter_on.png) no-repeat 50% 50%;
-    background-size:cover;
-    background-color:var(--BlackColor);
-} 
+  background: url(../images/sns/twitter_on.png) no-repeat 50% 50%;
+  background-size: cover;
+  background-color: var(--BlackColor);
+}
 
 #collaborations .sns li.telegram:hover a {
-    background:url(../images/sns/telegram_on.png) no-repeat 50% 50%;
-    background-size:cover;
-    background-color:var(--BlackColor);
-} 
+  background: url(../images/sns/telegram_on.png) no-repeat 50% 50%;
+  background-size: cover;
+  background-color: var(--BlackColor);
+}
 
 #collaborations .sns li.sunswap:hover a {
-    background:url(../images/sns/sunswap_on.png) no-repeat 50% 50%;
-    background-size:cover;
-    background-color:var(--BlackColor);
-} 
+  background: url(../images/sns/sunswap_on.png) no-repeat 50% 50%;
+  background-size: cover;
+  background-color: var(--BlackColor);
+}
 
 #collaborations .sns li.linktree:hover a {
-    background:url(../images/sns/linktree_on.png) no-repeat 50% 50%;
-    background-size:cover;
-    background-color:var(--BlackColor);
-} 
+  background: url(../images/sns/linktree_on.png) no-repeat 50% 50%;
+  background-size: cover;
+  background-color: var(--BlackColor);
+}
 
 #collaborations .sns li.cmc:hover a {
-    background:url(../images/sns/cmc_on.png) no-repeat 50% 50%;
-    background-size:cover;
-    background-color:var(--BlackColor);
-} 
+  background: url(../images/sns/cmc_on.png) no-repeat 50% 50%;
+  background-size: cover;
+  background-color: var(--BlackColor);
+}
+
+#collaborations .tv_light {
+  position: absolute;
+  left: 50%;
+  top: 23.33%;
+  transform: translate(-50%);
+  width: auto;
+  z-index: 3;
+  animation: softBlink 3s ease-in-out infinite;
+}
+
+@keyframes softBlink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.slider-wrap {
+  background-color: #2b2b2b;
+  width: 100%;
+  height: 610px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  position: relative;
+  box-shadow: 0 0px 38px #000;
+}
+
+.slider-inner-wrap {
+  position: relative;
+  width: 1020px; /* 데스크탑에서 두 이미지가 보이도록 최대 너비를 800px로 설정 */
+  height: 500px;
+  background-color: #000;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0px 38px #000;
+}
+
+.slider-wrap .slider-container {
+  max-width: 800px;
+  margin: auto;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.slider-wrap .swiper-slide img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
