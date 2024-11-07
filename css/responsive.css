@@ -1,227 +1,248 @@
 @charset "utf-8";
 
-@media screen and (max-width:1400px) {
-    /* #home */
-    #home .button a {
-        bottom:200px;
-    }
+@media screen and (max-width: 1400px) {
+  /* #home */
+  #home .button a {
+    bottom: 200px;
+  }
 }
 
-@media screen and (max-width:1100px) {    
-    /* 토큰 컨트랙트 위치 조정 */
-    .image-copy-container {
-        position: absolute;
-        top: 15%; /* 화면 중앙 */
-        left: 55%; /* 화면 중앙 */
-        transform: translate(-50%, -50%); /* 이미지가 중앙에서 시작되도록 */
-        cursor: pointer; /* 마우스를 올렸을 때 커서 변경 */
-    }
+@media screen and (max-width: 1100px) {
+  /* 토큰 컨트랙트 위치 조정 */
+  .image-copy-container {
+    position: absolute;
+    top: 15%; /* 화면 중앙 */
+    left: 55%; /* 화면 중앙 */
+    transform: translate(-50%, -50%); /* 이미지가 중앙에서 시작되도록 */
+    cursor: pointer; /* 마우스를 올렸을 때 커서 변경 */
+  }
 
-    .image-copy-container img {
-        content: url('../images/token/token_mobile.png'); /* 모바일용 이미지 */
-    }
-      
-    #copy-image {
+  .image-copy-container img {
+    content: url("../images/token/token_mobile.png"); /* 모바일용 이미지 */
+  }
+
+  #copy-image {
     width: 25%; /* 이미지 크기 */
     height: auto;
-    }
+  }
 }
 
-@media screen and (max-width:992px) {    
-    /* header */
-    header .gnb_pc {
-        display:none;
-    }
-    
-    header .side_menu {
-        display:block;
-    }
-    
-    .image-copy-container {
-        position: absolute;
-        top: 17%; /* 화면 중앙 */
-        left: 55%; /* 화면 중앙 */
-        transform: translate(-50%, -50%); /* 이미지가 중앙에서 시작되도록 */
-        cursor: pointer; /* 마우스를 올렸을 때 커서 변경 */
-    }
-      
-    #copy-image {
+@media screen and (max-width: 992px) {
+  /* header */
+  header .gnb_pc {
+    display: none;
+  }
+
+  header .side_menu {
+    display: block;
+  }
+
+  .image-copy-container {
+    position: absolute;
+    top: 17%; /* 화면 중앙 */
+    left: 55%; /* 화면 중앙 */
+    transform: translate(-50%, -50%); /* 이미지가 중앙에서 시작되도록 */
+    cursor: pointer; /* 마우스를 올렸을 때 커서 변경 */
+  }
+
+  #copy-image {
     width: 30%; /* 이미지 크기 */
     height: auto;
-    }
-    
-    /* #story */    
-    #story .col-lg-6 {
-        text-align:center;
-    }
-    
-    #story .col-12 .text {
-        margin:50px 0 50px;
-        padding:0;
-    }
-    
-    /* #tokenomix */
-    #tokenomix .token1 {
-        left:-100px;
-        max-width:300px;
-    }
+  }
 
-    #tokenomix .token2 {
-        right:-50px;
-        max-width:300px;
-    }
-    
-    /* #event */
-    #event {
-        padding:0 0 900px;
-    }
+  /* #story */
+  #story .col-lg-6 {
+    text-align: center;
+  }
 
-    #event h4 {
-        margin-bottom:500px;
-    }
-    
-    /* #collaborations */
-    #collaborations .collaborations li {
-        width:25%;
-    }
+  #story .col-12 .text {
+    margin: 50px 0 50px;
+    padding: 0;
+  }
+
+  /* #tokenomix */
+  #tokenomix .token1 {
+    left: -100px;
+    max-width: 300px;
+  }
+
+  #tokenomix .token2 {
+    right: -50px;
+    max-width: 300px;
+  }
+
+  /* #event */
+  #event {
+    padding: 0 0 900px;
+  }
+
+  #event h4 {
+    margin-bottom: 500px;
+  }
+
+  /* #collaborations */
+  #collaborations .collaborations li {
+    width: 25%;
+  }
 }
 
-@media screen and (max-width:768px){ 
-    /* #home */
+@media screen and (max-width: 768px) {
+  /* #home */
 
-    .button-container {
-        justify-content: center; /* 버튼을 가운데 정렬 */
-    }
-  
-    .home-button {
-        margin: 10px;
-    }
+  .button-container {
+    justify-content: center; /* 버튼을 가운데 정렬 */
+  }
 
-    .home-button.button-sun img {
-        content: url('../images/button/sunswap-m.png'); /* 모바일용 이미지 */
-    }
+  .home-button {
+    margin: 10px;
+  }
 
-    .home-button.button-bvox img {
-        content: url('../images/button/bvox-m.png'); /* 모바일용 이미지 */
-    }
+  .home-button.button-sun img {
+    content: url("../images/button/sunswap-m.png"); /* 모바일용 이미지 */
+  }
 
-    .home-button.button-dextools img {
-        content: url('../images/button/dextools-m.png'); /* 모바일용 이미지 */
-    }
+  .home-button.button-bvox img {
+    content: url("../images/button/bvox-m.png"); /* 모바일용 이미지 */
+  }
 
-    .home-button.button-come img {
-        content: url('../images/button/come-m.png'); /* 모바일용 이미지 */
-    }
+  .home-button.button-dextools img {
+    content: url("../images/button/dextools-m.png"); /* 모바일용 이미지 */
+  }
 
-    .image-copy-container {
-        position: absolute;
-        top: 25%; /* 화면 중앙 */
-        left: 55%; /* 화면 중앙 */
-        transform: translate(-50%, -50%); /* 이미지가 중앙에서 시작되도록 */
-        cursor: pointer; /* 마우스를 올렸을 때 커서 변경 */
-    }
+  .home-button.button-come img {
+    content: url("../images/button/come-m.png"); /* 모바일용 이미지 */
+  }
 
-    /* #tokenomix */
-    #tokenomix .img_pc {
-        display:none;
-    }
+  .image-copy-container {
+    position: absolute;
+    top: 25%; /* 화면 중앙 */
+    left: 55%; /* 화면 중앙 */
+    transform: translate(-50%, -50%); /* 이미지가 중앙에서 시작되도록 */
+    cursor: pointer; /* 마우스를 올렸을 때 커서 변경 */
+  }
 
-    #tokenomix .img_m {
-        display:block;
-    }
-    
-    /* #collaborations */
-    #collaborations .collaborations li {
-        width:25%;
-        padding:12px;
-    }
-    
-    #collaborations .collaborations li .thumb {
-        width:100px;
-        height:100px;
-    }
+  /* #tokenomix */
+  #tokenomix .img_pc {
+    display: none;
+  }
+
+  #tokenomix .img_m {
+    display: block;
+  }
+
+  /* #collaborations */
+  #collaborations .collaborations li {
+    width: 25%;
+    padding: 12px;
+  }
+
+  #collaborations .collaborations li .thumb {
+    width: 100px;
+    height: 100px;
+  }
 }
 
-@media screen and (max-width:576px){ 
-    /* .btn_top */
-    .btn_top {
-        right:20px;
-        bottom:60px;
-        width:40px;
-        height:40px;
-        line-height:40px;
-        font-size:16px;
-    }
+@media screen and (max-width: 576px) {
+  /* .btn_top */
+  .btn_top {
+    right: 20px;
+    bottom: 60px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+  }
 
-    /* #home */
-    .image-copy-container {
-        position: absolute;
-        top: 30%; /* 화면 중앙 */
-        left: 55%; /* 화면 중앙 */
-        transform: translate(-50%, -50%); /* 이미지가 중앙에서 시작되도록 */
-        cursor: pointer; /* 마우스를 올렸을 때 커서 변경 */
-    }
-      
-    #copy-image {
+  /* #home */
+  .image-copy-container {
+    position: absolute;
+    top: 30%; /* 화면 중앙 */
+    left: 55%; /* 화면 중앙 */
+    transform: translate(-50%, -50%); /* 이미지가 중앙에서 시작되도록 */
+    cursor: pointer; /* 마우스를 올렸을 때 커서 변경 */
+  }
+
+  #copy-image {
     width: 35%; /* 이미지 크기 */
     height: auto;
-    }
-    
-    /* #story */
-    #story .text br {
-        display:none;
-    }
-    
-    /* #tokenomix */
-    #tokenomix .token1 {
-        left:-50px;
-        max-width:150px;
-    }
+  }
 
-    #tokenomix .token2 {
-        right:0px;
-        bottom:-150px;
-        max-width:150px;
-    }
+  /* #story */
+  #story .text br {
+    display: none;
+  }
 
-    /* #collaborations */
-    #collaborations .collaborations li {
-        width:33.3333%;
-        padding:6px;
-    }
+  /* #tokenomix */
+  #tokenomix .token1 {
+    left: -50px;
+    max-width: 150px;
+  }
 
-    #collaborations .sns li {
-        width:20%;
-        padding:0 10px;
-    }
+  #tokenomix .token2 {
+    right: 0px;
+    bottom: -150px;
+    max-width: 150px;
+  }
 
-    #collaborations .sns li a {
-        display:inline-block;
-        width:60px;
-        height:60px;
-    }
+  /* #collaborations */
+  #collaborations .collaborations li {
+    width: 33.3333%;
+    padding: 6px;
+  }
+
+  #collaborations .sns li {
+    width: 20%;
+    padding: 0 10px;
+  }
+
+  #collaborations .sns li a {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+  }
 }
 
-@media screen and (max-width:360px) {
-    /* header */    
-    header h1 {
-        width:150px;
-    }
-    
-    /* #collaborations */
-    #collaborations .collaborations li .thumb {
-        width:90px;
-        height:90px;
-    }
+@media screen and (max-width: 360px) {
+  /* header */
+  header h1 {
+    width: 150px;
+  }
 
-    #collaborations .sns li {
-        width:20%;
-        padding:0 10px;
-    }
+  /* #collaborations */
+  #collaborations .collaborations li .thumb {
+    width: 90px;
+    height: 90px;
+  }
 
-    #collaborations .sns li a {
-        display:inline-block;
-        width:60px;
-        height:60px;
-    }
+  #collaborations .sns li {
+    width: 20%;
+    padding: 0 10px;
+  }
+
+  #collaborations .sns li a {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-wrap .slider-container {
+    max-width: 400px; /* 모바일에서는 하나의 이미지 크기만 표시 */
+  }
+  .slider-wrap .swiper-slide img {
+    width: 210px;
+    height: 210px;
+  }
+  .slider-inner-wrap {
+    width: 274px; /* 데스크탑에서 두 이미지가 보이도록 최대 너비를 800px로 설정 */
+    height: 298px;
+  }
+
+  .slider-wrap {
+    height: 338px;
+  }
+  .tv_light {
+    display: none;
+  }
 }
