@@ -560,7 +560,7 @@ section .text {
 }
 
 .slider-wrap .slider-container {
-  max-width: 800px;
+  max-width: 820px;
   margin: auto;
   background-color: #000;
   overflow: hidden;
