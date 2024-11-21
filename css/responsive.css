@@ -98,15 +98,19 @@
   }
 
   .home-button.button-sun img {
-    content: url("../images/button/sunswap-m.png"); /* 모바일용 이미지 */
+    content: url("../images/button/v2/sunswap-m.png"); /* 모바일용 이미지 */
+  }
+
+  .home-button.button-xt img {
+    content: url("../images/button/v2/xt-m.png"); /* 모바일용 이미지 */
   }
 
   .home-button.button-bvox img {
-    content: url("../images/button/bvox-m.png"); /* 모바일용 이미지 */
+    content: url("../images/button/v2/bvox-m.png"); /* 모바일용 이미지 */
   }
 
   .home-button.button-dextools img {
-    content: url("../images/button/dextools-m.png"); /* 모바일용 이미지 */
+    content: url("../images/button/v2/dextools-m.png"); /* 모바일용 이미지 */
   }
 
   .home-button.button-come img {
