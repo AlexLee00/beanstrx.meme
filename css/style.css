@@ -79,6 +79,7 @@ section .text {
   align-items: center;
   padding: 10px;
   flex-wrap: wrap; /* 모바일용 2x2 배열 지원 */
+  gap: 16px 0; /* 열 간격만 설정 */
 }
 
 /* 각 버튼 스타일 */
