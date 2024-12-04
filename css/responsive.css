@@ -99,41 +99,40 @@
   }
 
   .home-button.button-sun img {
-    content: url("../images/button/v3/sunswap-m.png"); /* 모바일용 이미지 */
+    content: url("../images/button/v3.1/sunswap-m.png"); /* 모바일용 이미지 */
   }
 
   .home-button.button-xt img {
-    content: url("../images/button/v3/xt-m.png"); /* 모바일용 이미지 */
+    content: url("../images/button/v3.1/xt-m.png"); /* 모바일용 이미지 */
   }
 
   .home-button.button-bvox img {
-    content: url("../images/button/v3/bvox-m.png"); /* 모바일용 이미지 */
+    content: url("../images/button/v3.1/bvox-m.png"); /* 모바일용 이미지 */
   }
 
   .home-button.button-dextools img {
-    content: url("../images/button/v3/dextools-m.png"); /* 모바일용 이미지 */
+    content: url("../images/button/v3.1/dextools-m.png"); /* 모바일용 이미지 */
   }
 
   .home-button.button-mexc img {
-    content: url("../images/button/v3/mexc-m.png"); /* 모바일용 이미지 */
+    content: url("../images/button/v3.1/mexc-m.png"); /* 모바일용 이미지 */
   }
 
   .home-button.button-binance img {
-    content: url("../images/button/v3/binance-m.png"); /* 모바일용 이미지 */
+    content: url("../images/button/v3.1/binance-m.png"); /* 모바일용 이미지 */
   }
 
   .home-button.button-okx img {
-    content: url("../images/button/v3/okx-m.png"); /* 모바일용 이미지 */
+    content: url("../images/button/v3.1/okx-m.png"); /* 모바일용 이미지 */
   }
 
   .home-button.button-bybit img {
-    content: url("../images/button/v3/bybit-m.png"); /* 모바일용 이미지 */
+    content: url("../images/button/v3.1/bybit-m.png"); /* 모바일용 이미지 */
   }
 
   .home-button.button-come img {
     content: url("../images/button/come-m.png"); /* 모바일용 이미지 */
   }
-
 
   .image-copy-container {
     position: absolute;
