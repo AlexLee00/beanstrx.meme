@@ -91,11 +91,11 @@
 
   .button-container {
     justify-content: center; /* 버튼을 가운데 정렬 */
-    gap: 0;
+    gap: 0 5px; /* 행 간격만 설정 */
   }
 
   .home-button {
-    margin: 10px;
+    margin: 5px;
   }
 
   .home-button.button-sun img {
