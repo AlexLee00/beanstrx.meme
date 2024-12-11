@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+
 @media screen and (max-width: 1400px) {
   /* #home */
   #home .button a {
@@ -130,8 +131,12 @@
     content: url("../images/button/v3.1/bybit-m.png"); /* 모바일용 이미지 */
   }
 
+  .home-button.button-gate img {
+    content: url("../images/button/v3.1/gate_io-m.png"); /* 모바일용 이미지 */
+  }
+
   .home-button.button-come img {
-    content: url("../images/button/come-m.png"); /* 모바일용 이미지 */
+    content: url("../images/button/v3.1/come-m.png"); /* 모바일용 이미지 */
   }
 
   .image-copy-container {
@@ -265,5 +270,11 @@
   }
   .tv_light {
     display: none;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1500px;
   }
 }
