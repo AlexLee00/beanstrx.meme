@@ -138,6 +138,9 @@
   .home-button.button-come img {
     content: url("../images/button/v3.1/come-m.png"); /* 모바일용 이미지 */
   }
+  .home-button.button-biconomy img {
+    content: url("../images/button/v3.1/biconomy-m.png"); /* 모바일용 이미지 */
+  }
 
   .image-copy-container {
     position: absolute;
