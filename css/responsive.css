@@ -90,6 +90,10 @@
 @media screen and (max-width: 768px) {
   /* #home */
 
+  .mobile-hidden {
+    display: none;
+  }
+
   .button-container {
     justify-content: center; /* 버튼을 가운데 정렬 */
     gap: 0 5px; /* 행 간격만 설정 */
@@ -100,46 +104,55 @@
   }
 
   .home-button.button-sun img {
-    content: url("../images/button/v3.1/sunswap-m.png"); /* 모바일용 이미지 */
+    content: url("../images/button/v4/sunswap-m.png"); /* 모바일용 이미지 */
   }
 
   .home-button.button-xt img {
-    content: url("../images/button/v3.1/xt-m.png"); /* 모바일용 이미지 */
+    content: url("../images/button/v4/xt-m.png"); /* 모바일용 이미지 */
   }
 
   .home-button.button-bvox img {
-    content: url("../images/button/v3.1/bvox-m.png"); /* 모바일용 이미지 */
+    content: url("../images/button/v4/bvox-m.png"); /* 모바일용 이미지 */
   }
 
   .home-button.button-dextools img {
-    content: url("../images/button/v3.1/dextools-m.png"); /* 모바일용 이미지 */
+    content: url("../images/button/v4/dextools-m.png"); /* 모바일용 이미지 */
   }
 
   .home-button.button-mexc img {
-    content: url("../images/button/v3.1/mexc-m.png"); /* 모바일용 이미지 */
+    content: url("../images/button/v4/mexc-m.png"); /* 모바일용 이미지 */
   }
 
   .home-button.button-binance img {
-    content: url("../images/button/v3.1/binance-m.png"); /* 모바일용 이미지 */
+    content: url("../images/button/v4/binance-m.png"); /* 모바일용 이미지 */
   }
 
   .home-button.button-okx img {
-    content: url("../images/button/v3.1/okx-m.png"); /* 모바일용 이미지 */
+    content: url("../images/button/v4/okx-m.png"); /* 모바일용 이미지 */
   }
 
   .home-button.button-bybit img {
-    content: url("../images/button/v3.1/bybit-m.png"); /* 모바일용 이미지 */
+    content: url("../images/button/v4/bybit-m.png"); /* 모바일용 이미지 */
   }
 
   .home-button.button-gate img {
-    content: url("../images/button/v3.1/gate_io-m.png"); /* 모바일용 이미지 */
+    content: url("../images/button/v4/gate_io-m.png"); /* 모바일용 이미지 */
   }
 
   .home-button.button-come img {
-    content: url("../images/button/v3.1/come-m.png"); /* 모바일용 이미지 */
+    content: url("../images/button/v4/come-m.png"); /* 모바일용 이미지 */
   }
+
   .home-button.button-biconomy img {
-    content: url("../images/button/v3.1/biconomy-m.png"); /* 모바일용 이미지 */
+    content: url("../images/button/v4/biconomy-m.png"); /* 모바일용 이미지 */
+  }
+
+  .home-button.button-ascendex img {
+    content: url("../images/button/v4/ascendex-m.png"); /* 모바일용 이미지 */
+  }
+
+  .home-button.button-poloniex img {
+    content: url("../images/button/v4/poloniex-m.png"); /* 모바일용 이미지 */
   }
 
   .image-copy-container {
