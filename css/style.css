@@ -87,7 +87,7 @@ section .text {
   width: 15vw; /* 화면 너비의 15%로 설정 */
   height: auto; /* 비율에 맞춰 높이 자동 조정 */
   max-width: 300px; /* 최대 크기 제한 */
-  min-width: 150px; /* 최소 크기 제한 */
+  min-width: 100px; /* 최소 크기 제한 */
   background-size: cover;
   background-position: center;
 }
