@@ -155,6 +155,10 @@
     content: url("../images/button/v4/poloniex-m.png"); /* 모바일용 이미지 */
   }
 
+  .home-button.button-kcex img {
+    content: url("../images/button/v4/kcex-m.png"); /* 모바일용 이미지 */
+  }
+
   .image-copy-container {
     position: absolute;
     top: 25%; /* 화면 중앙 */
